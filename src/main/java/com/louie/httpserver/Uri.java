@@ -12,4 +12,12 @@ public class Uri {
 	public static boolean contains(String uri){
 		return uriMap.containsKey(uri);
 	}
+	
+	public static Object get(String uri){
+		return uriMap.get(uri);
+	}
+	
+	public static ConcurrentHashMap<String,Object> getAll(){
+		return uriMap;
+	}
 }
